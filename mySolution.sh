@@ -1,5 +1,11 @@
+#!/bin/bash
+wget https://exit-zero-academy.github.io/DevOpsTheHardWayAssets/linux_project/secretGenerator.tar.gz
+tar -xzvf secretGenerator.tar.gz
 cd src
-mkdir -p secretDir
-touch secretDir/.secret
-chmod 600 secretDir/.secret
-/bin/bash generateSecret.sh
+rm -rf maliciousFiles
+mkdir secretDir
+touch .secret
+chmod 600 .secret
+cd ..
+chmod +x generateSecret.sh
+./generateSecret.sh

@@ -12,4 +12,3 @@ chmod 600 .secret
 chmod 777 generateSecret.sh
 cd ..
 ./secretDir/generateSecret.sh
-
